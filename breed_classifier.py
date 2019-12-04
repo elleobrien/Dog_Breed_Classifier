@@ -12,20 +12,20 @@ and then fully-connected layers are trained on top to label data.
 from keras.applications import VGG16
 from keras import models, layers, optimizers
 from keras.applications.vgg16 import preprocess_input
+from keras import backend as K
 import numpy as np
 import os 
 import re
 from sklearn.model_selection import train_test_split
 from keras.preprocessing import image
-from numpy.random import seed
-from tensorflow import set_random_seed
 import random as rn
+import tensorflow as tf
 
 
 ################## FOR REPRODUCIBILITY #############################
 # Set all random number seeds
-seed(1)
-set_random_seed(1)
+np.random.seed(1)
+tf.set_random_seed(1)
 rn.seed(1)
 
 # Force TensorFlow to use single thread.
