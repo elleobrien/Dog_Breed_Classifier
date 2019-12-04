@@ -3,7 +3,7 @@
 # Download the dogs
 wget http://vision.stanford.edu/aditya86/ImageNetDogs/images.tar
 
-tar -xczf images.tar
+tar -xf images.tar
 
 # Keep only the breeds we care about. Get the first 100 images in those folders.
 mkdir data
