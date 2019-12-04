@@ -31,8 +31,8 @@ rn.seed(1)
 # Force TensorFlow to use single thread.
 # Multiple threads are a potential source of non-reproducible results.
 # For further details, see: https://stackoverflow.com/questions/42022950/
-session_conf = tf.ConfigProto(intra_op_parallelism_threads=1,
-                              inter_op_parallelism_threads=1)
+#session_conf = tf.ConfigProto(intra_op_parallelism_threads=1,
+#                              inter_op_parallelism_threads=1)
 
 # The below tf.set_random_seed() will make random number generation
 # in the TensorFlow backend have a well-defined initial state.
