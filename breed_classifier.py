@@ -12,7 +12,6 @@ and then fully-connected layers are trained on top to label data.
 from keras.applications import VGG16
 from keras import models, layers, optimizers
 from keras.applications.vgg16 import preprocess_input
-from keras import backend as K
 import numpy as np
 import os 
 import re
@@ -27,19 +26,6 @@ import tensorflow as tf
 np.random.seed(1)
 tf.set_random_seed(1)
 rn.seed(1)
-
-# Force TensorFlow to use single thread.
-# Multiple threads are a potential source of non-reproducible results.
-# For further details, see: https://stackoverflow.com/questions/42022950/
-#session_conf = tf.ConfigProto(intra_op_parallelism_threads=1,
-#                              inter_op_parallelism_threads=1)
-
-# The below tf.set_random_seed() will make random number generation
-# in the TensorFlow backend have a well-defined initial state.
-# For further details, see:
-# https://www.tensorflow.org/api_docs/python/tf/set_random_seed
-#sess = tf.Session(graph=tf.get_default_graph(), config=session_conf)
-#K.set_session(sess)
 
 
 ############ Set some image processing parameters ####################
