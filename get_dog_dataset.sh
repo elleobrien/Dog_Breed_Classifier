@@ -15,8 +15,6 @@ cd ../n02085936-Maltese_dog
 cp `ls | head -100` ../../data   
 
 # Remove all the other dog breed folders
-cd ..
-shopt -s extglob
-#rm -rf !(n02085936-Maltese_dog|n02088094-Afghan_hound) 
-rm ../images.tar
-shopt -u extglob
+cd ../..
+rm images.tar
+
