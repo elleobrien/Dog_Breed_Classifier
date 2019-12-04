@@ -38,8 +38,8 @@ rn.seed(1)
 # in the TensorFlow backend have a well-defined initial state.
 # For further details, see:
 # https://www.tensorflow.org/api_docs/python/tf/set_random_seed
-sess = tf.Session(graph=tf.get_default_graph(), config=session_conf)
-K.set_session(sess)
+#sess = tf.Session(graph=tf.get_default_graph(), config=session_conf)
+#K.set_session(sess)
 
 
 ############ Set some image processing parameters ####################
