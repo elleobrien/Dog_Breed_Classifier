@@ -3,7 +3,7 @@
 This code is for the example given in [Start Version Controlling your ML Datasets](link when live).
 
 ## Step 1
-Run get_dog_dataset.sh to download the Stanford Dog Dataset and make a new data directory containing a subset of the images for a classification problem (100 Afghan Hound images and 100 Maltese images). The entire Stanford Dog Dataset will be contained in a directory called Images. If you are following along with the experiment in the blog, after you initialize git you will want to add this dataset to the .gitignore file:
+Run get_dog_dataset.sh to download the Stanford Dog Dataset and make a new data directory containing a subset of the images for a classification problem (100 Afghan Hound images and 100 Maltese images). 
 
 ```
 git init
